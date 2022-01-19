@@ -23,5 +23,8 @@ export async function listRecords<Data = unknown>(): Promise<Data[]> {
 
 export async function addRecord<Data = unknown>(data: Data) {
   const id = randomUUID();
-  return fs.writeFile(join(databaseDir, `${id}.json`), JSON.stringify(data));
+  return fs.writeFile(
+    join(databaseDir, `${id}.json`),
+    JSON.stringify(data, null, 2),
+  );
 }

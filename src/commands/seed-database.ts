@@ -1,6 +1,6 @@
 import { ComputerAsset } from '../models/computer';
 import { BananaAsset } from '../models/banana';
-import { addRecord, connectToRedis } from '../local-nosql';
+import { addRecord } from '../local-nosql';
 
 export async function main() {
   await Promise.all([

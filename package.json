@@ -9,6 +9,10 @@
   "author": "Simen A. W. Olsen <so@bjerk.io>",
   "license": "Apache-2.0",
   "prettier": "@cobraz/prettier",
+  "scripts": {
+    "seed": "ts-node src/commands/seed-database",
+    "listAll": "ts-node src/commands/get-from-database"
+  },
   "devDependencies": {
     "@cobraz/prettier": "^2.0.0",
     "@tsconfig/node16": "^1.0.2",
@@ -20,6 +24,7 @@
     "node": "16.13.2"
   },
   "dependencies": {
-    "runtypes": "^6.5.0"
+    "runtypes": "^6.5.0",
+    "ts-node": "^10.4.0"
   }
 }
