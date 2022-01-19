@@ -24,6 +24,8 @@
     "node": "16.13.2"
   },
   "dependencies": {
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.13.2",
     "runtypes": "^6.5.0",
     "ts-node": "^10.4.0"
   }

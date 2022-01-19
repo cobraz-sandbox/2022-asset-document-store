@@ -9,3 +9,7 @@ export const bananaAssetRt = rt
   .And(assetRt);
 
 export type BananaAsset = rt.Static<typeof bananaAssetRt>;
+
+// validering
+const dummedata = { kind: 'bana', color: 'yellow' };
+const riktigdata = bananaAssetRt.check(dummedata);
